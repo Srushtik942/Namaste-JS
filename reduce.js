@@ -18,7 +18,7 @@ console.log(findmax(arr));
 const op = arr.reduce(function(max,curr){
 
     if(curr>max){
-        max = curr;
+        max= curr;
     }
     return max;
 

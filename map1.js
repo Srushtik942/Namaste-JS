@@ -11,43 +11,50 @@ const user =[
 
 //list of full names all the user
 
-const op = user.map(x=>x.firstName + " " + x.lastName);
+// const op = user.map(x=>x.firstName + " " + x.lastName);
 
-console.log(op);
+// console.log(op);
 
 
 //how many people with age
 //we have to use reduce here
 
-const op1 = user.reduce(function(acc,curr){
+// const op1 = user.reduce(function(acc,curr){
 
-    if(acc[curr.age]){
-        acc[curr.age]++;
+// if(acc[curr.age]){
+// acc[curr.age] = ++acc[curr.age];
+// }
+// else{
+//     acc[curr.age]=1;
+// }
 
-    }else{
+// },{});
 
-        acc[curr.age]=1
-
-    }
-return acc;
-
-},{});
-
-console.log(op1);
-
+// console.log(op1);
 
 //filter function
 //if we want op of the name who's age is less than 30
 
-const op2 = user.filter(x=>x.age<30).map((x)=>x.firstName);
+// const op2 = user.filter(x=>x.age<30).map((x)=>x.firstName);
 
-console.log(op2);
+// console.log(op2);
+
+// const op3 = user.reduce(function(acc,curr){
+//     if(curr.age<30){
+//       acc.push(curr.firstName);
+//     }
+//     return acc;
+// },[]);
+
+// console.log(op3);
 
 const op3 = user.reduce(function(acc,curr){
+
     if(curr.age<30){
-      acc.push(curr.firstName);
+        acc.push(curr.firstName);
     }
     return acc;
+
 },[]);
 
 console.log(op3);

@@ -26,6 +26,10 @@ const circumefrence = function(radius){
     return 2 * Math.PI * radius;
 }
 
+const diameter = function (radius){
+    return 2 * radius;
+}
+
 Array.prototype.calculate =  function (logic){
     const op = [];
     for(let i=0;i<this.length;i++){
@@ -39,6 +43,7 @@ console.log(radius.map(area));
 
 console.log(radius.calculate(area));
 
+console.log(radius.calculate(diameter));
 // console.log(calculate(radius,circumefrence));
 
 
