@@ -24,3 +24,6 @@ function getName(){
    console.log("Hello!");
 }
 
+function getCollegeName(){
+   console.log("Welcome to my college!");
+}
