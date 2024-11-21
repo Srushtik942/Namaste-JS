@@ -21,7 +21,20 @@
 // });
 
 
-const GitHub_API ="https://api.github.com/users/Srushtik942";
+// const GitHub_API ="https://api.github.com/users/Srushtik942";
 
-//fetch returns promise
-const user = fetch(GitHub_API);
+// //fetch returns promise
+// const user = fetch(GitHub_API);
+
+
+const cart = ["shoes","pants","kurta"];
+
+createOrder(cart,function(orderId){
+    proceedToPayment(orderId);
+});
+
+const promise = createOrder(cart);
+
+promise.then(function(orderId){
+    proceedToPayment(orderId);
+)};
