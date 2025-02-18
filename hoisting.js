@@ -8,12 +8,19 @@
 //     console.log("Namaste JS!");
 //  }
 
-
+console.log(y);
 console.log(x);
 getName();
 // getName2();
-
+var y;
 var x= 7;
+
+if(y === undefined){
+   console.log("y is undefined");
+}
+else{
+   console.log("Y is not undefined")
+}
 
 
 // var getName2=()=>{
